@@ -14,7 +14,7 @@
 
 .page-header-hr-color {
   background-color: transparent;
-  border-top: 2px solid $header-heading-color;
+  border-top: 1px solid $header-heading-color;
 }
 
 .page-header a, a:hover {
@@ -22,12 +22,22 @@
   text-decoration: none;
 }
 
+.page-header a:hover {
+  color: $header-bg-color-secondary;
+  text-decoration: none;
+}
+
 .page-header.fab, .page-header.fas {
   color: $header-heading-color;
 }
 
-.page-header.fab:hover, .page-header.fas:hover {
-  color: $header-heading-color;
+.page-header.fab:hover {
+  color: $header-bg-color-secondary;
+  text-decoration: none;
+}
+
+.page-header.fas:hover {
+  color: $header-bg-color-secondary;
   text-decoration: none;
 }
 
