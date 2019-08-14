@@ -16,6 +16,20 @@
   color: page-header-text-color;
 }
 
+.page-header a, a:hover {
+    color: $header-heading-color;
+  text-decoration: none;
+}
+
+.page-header.fab, .page-header.fas {
+  color: $header-heading-color;
+}
+
+.page-header.fab:hover, .page-header.fas:hover {
+  color: $header-heading-color;
+  text-decoration: none;
+}
+
 /* Hyperlinks */
 a {
   color: $header-bg-color;
