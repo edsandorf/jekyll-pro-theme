@@ -12,12 +12,12 @@
   color: $header-heading-color;
 }
 
-.page-header-button a a:hover {
-  color: page-header-text-color;
+.page-header-hr-color {
+  color: $header-heading-color;
 }
 
 .page-header a, a:hover {
-    color: $header-heading-color;
+  color: $header-heading-color;
   text-decoration: none;
 }
 
