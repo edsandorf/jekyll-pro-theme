@@ -16,3 +16,27 @@
   color: page-header-text-color;
 }
 
+/* Hyperlinks */
+a {
+  color: $header-bg-color;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $header-bg-color-secondary;
+  text-decoration: none;
+}
+
+/* Font Awesome */
+.fab, .fas {
+  color: $header-bg-color-secondary;
+}
+
+.fab:hover, .fas:hover {
+  color: $header-bg-color;
+  text-decoration: none;
+}
+
+.fa-bars {
+  color: $header-bg-color;
+}
