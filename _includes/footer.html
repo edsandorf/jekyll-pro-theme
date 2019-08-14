@@ -1,3 +1,29 @@
 <div class = "container border-top border-secondary border-3 mt-3">
-  <span>Need to put something here</span>
+  <div class = "row">
+    <div class = "col">
+      <span>Powered by <a href = "https://jekyllrb.com/" class = "footer-header-link">jekyll</a> and <a href = "https://getbootstrap.com/" class = "footer-header-link">bootstrap</a></span>
+    </div>
+    <div class = "col-md-auto">
+      {% if site.e_mail %}
+        <a href = "mailto:{{ site.e_mail }}">
+          <i class= "fas fa-envelope-square fa-3x"></i>
+        </a>
+      {% endif %}
+      {% if site.github_handle %}
+        <a href = "https://github.com/{{ site.github_handle }}/" target = "_blank">
+          <i class="fab fa-github-square fa-3x"></i>
+        </a>
+      {% endif %}
+      {% if site.linkedin_handle %}
+        <a href = "https://www.linkedin.com/in/{{ site.linkedin_handle }}/" target = "_blank">
+          <i class="fab fa-linkedin fa-3x"></i>
+        </a>
+      {% endif %}
+      {% if site.twitter_handle %}
+        <a href = "https://twitter.com/{{ site.twitter_handle }}" target = "_blank">
+          <i class="fab fa-twitter-square fa-3x"></i>
+        </a>
+      {% endif %}
+    </div>
+  </div>
 </div>
