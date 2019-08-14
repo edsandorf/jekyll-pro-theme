@@ -1,8 +1,12 @@
 ---
 title: Welcome to pro-theme!
 ---
-# Welcome to pro-theme: A simplistic Jekyll theme for professional and project websites
 
-The development of the theme is a work in progress and will receive regular updates for the forseeable future. 
+pro-theme is a simple and minimalist Jekyll theme to use with GitHub pages. The idea for the theme was borne out of a need to have a uniform look to my professional web site and the project websites of my Github projects. The theme will receive regular updates for the forseeable future. 
 
-The theme is powered by Bootstrap 4 and makes use of Font Awesome.
+The theme is based on [Bootstrap 4](https://getbootstrap.com/) and makes use of the [Font Awesome](https://fontawesome.com/) icon set.
+
+
+
+
+
