@@ -1,10 +1,10 @@
-<div class = "jumbotron-fluid border-bottom border-secondary border-3">
-  <div class = "container">
+<div class = "jumbotron-fluid border-bottom border-secondary border-3 mb-3">
+  <div class = "container mx-auto">
     <h1 class = "display-4">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
     <p class = "lead">{{ page.description | default: site.description | default: site.github.project_tagline }}</p>
     <hr class = "my-4">
     {% if site.github.is_project_page %}
-      <a href = "{{ site.github.repository_url }}" class = "btn btn-lg">View on Github</a>
+      <a href = "{{ site.github.repository_url }}" class = "btn btn-primary btn-lg">View on Github</a>
     {% endif %}
     {% if site.show_downloads %}
       <a href = "{{ site.github.zip_url }}" class = "btn btn-lg"><i class = "fa fa-download"></i> Download .zip</a>
