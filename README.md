@@ -47,6 +47,18 @@ google_analytics: [Your Google Analytics tracking ID]
 ##  Add multiple pages and navigation to your site
 
 ## Add social media icons and links to the footer
+You can add social media icons to the footer of the web site by specifying the following variables in your site's `_config.yml`. 
+
+```yaml
+e_mail: [Your e-mail address]
+github_handle: [Your Github handle]
+linkedin_handle: [Your LinkedIn handle]
+twitter_handle: [Your Twitter handle]
+```
+
+At the moment only E-mail, Github, LinkedIn and Twitter are supported.
+
+
 
 # Acknowledgements
 I have taken inspiration from the clean look of the Cayman theme. If you inspect the source code of the current theme, you will see code chunks and variable names that are similar. 
