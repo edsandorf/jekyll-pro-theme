@@ -34,41 +34,56 @@ img {
   }
 }
 
-
-.page-header.fab, .page-header.fas {
+.page-header.fab {
   color: $header-heading-color;
+  
+  &:hover {
+    color: $header-bg-color-secondary;
+    text-decoration: none;
+  }  
 }
 
-.page-header.fab:hover {
-  color: $header-bg-color-secondary;
-  text-decoration: none;
+.page-header.fas {
+  color: $header-heading-color;
+  
+  &:hover {
+    color: $header-bg-color-secondary;
+    text-decoration: none;
+  }
 }
 
-.page-header.fas:hover {
-  color: $header-bg-color-secondary;
-  text-decoration: none;
-}
 
 /* Hyperlinks */
 a {
   color: $header-bg-color;
   text-decoration: none;
+  
+  &:hover {
+    color: $header-bg-color-secondary;
+    text-decoration: none;
+  }
 }
 
-a:hover {
-  color: $header-bg-color-secondary;
-  text-decoration: none;
-}
 
 /* Font Awesome */
-.fab, .fas {
+.fab {
   color: $header-bg-color-secondary;
+  
+  &:hover {
+    color: $header-bg-color;
+    text-decoration: none;
+  }  
 }
 
-.fab:hover, .fas:hover {
-  color: $header-bg-color;
-  text-decoration: none;
+.fas {
+  color: $header-bg-color-secondary;
+  
+  &:hover {
+    color: $header-bg-color;
+    text-decoration: none;
+  }
 }
+
 
 .fa-bars {
   color: $header-bg-color;
