@@ -1,6 +1,12 @@
 /* Import variables */
 @import "variables";
 
+/* */
+img {
+  max-width: 100%;
+}
+
+
 /* Header */
 .page-header {
   color: $header-heading-color;
@@ -17,15 +23,16 @@
   border-top: 1px solid $header-heading-color;
 }
 
-.page-header a, a:hover {
+.page-header a {
   color: $header-heading-color;
   text-decoration: none;
+  
+  &:hover {
+    color: $header-bg-color-secondary;
+    text-decoration: none;
+  }
 }
 
-.page-header a:hover {
-  color: $header-bg-color-secondary;
-  text-decoration: none;
-}
 
 .page-header.fab, .page-header.fas {
   color: $header-heading-color;
