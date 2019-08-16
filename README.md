@@ -58,6 +58,13 @@ twitter_handle: [Your Twitter handle]
 
 At the moment only E-mail, Github, LinkedIn and Twitter are supported.
 
+##  Adding a to-the-top button
+If your web site contains a lot of text a visitor will have to scroll down to read all of the content. To add a simple button taking the viewer to the top when they have scrolled past the bottom of the screen, add the following to your `_config.yml`. 
+
+```yaml
+to_the_top: true
+```
+
 # Previewing your website locally
 
 When building your website it is useful to be able to test your web site locally. To do so:

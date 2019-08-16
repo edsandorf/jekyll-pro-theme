@@ -3,14 +3,19 @@
   {% include head.html %}
   
   <body>
+    {% include js.html %}
+    
     {% include header.html %}
     
     <div class = "container">
       {{ content }}
     </div>
     
+    {% if site.to_the_top %}
+      {% include to-the-top.html %}
+    {% endif %}
+    
     {% include footer.html %}
     
-    {% include js.html %}
   </body>
 </html>
