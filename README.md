@@ -58,6 +58,19 @@ twitter_handle: [Your Twitter handle]
 
 At the moment only E-mail, Github, LinkedIn and Twitter are supported.
 
+# Previewing your website locally
+
+When building your website it is useful to be able to test your web site locally. To do so:
+
+1. Clone the repository and make a local copy on your machine `git clone https://github.com/edsandorf/pro-theme`
+2. Navigate to the folder
+3. Run the `install.sh` script in `/script/`. NOTE: You must have Ruby installed on your machine.
+4. Check that you have configured `_config.yml` to use the default theme.
+5. Your main sites should be in the root folder, while blog posts, news and publications should be in their respective folders.
+6. Run `serve.sh` in `/script/`, or use the command line by navigating to your site's root folder and run `bundle exec jekyll serve`.
+7. To see your website locally go to: `localhost:4000`
+
+For more information on how to set up your `_config.yml` correctly, please see the [Jekyll docs site](https://jekyllrb.com/docs/).
 
 
 # Acknowledgements
