@@ -107,6 +107,13 @@ a {
   border-bottom: 0px;
 }
 
+#toggleButton {
+  background-color: $header-bg-color-secondary;
+  border-color: $theme-gray;
+  padding: 7.5px 12.5px;
+  margin: 5px;
+}
+
 /* Search */
 
 #searchButton {
@@ -183,8 +190,4 @@ blockquote {
     color: $text-color;
     text-decoration: none;
   }
-}
-
-.fa-bars {
-  color: $header-bg-color;
 }
