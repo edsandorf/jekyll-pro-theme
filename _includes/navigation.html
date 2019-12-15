@@ -1,0 +1,22 @@
+<div class = "container">
+  <nav>
+    <ul class = "nav nav-tabs" id = "nav-tab">
+      {% for node in site.data.navigation %}
+        {% if page.url == node.link %}
+          <li class = "nav-item active nav-customizer">
+            <a class = "nav-link active" href = "{{ node.link }}">
+              {{ node.name }}
+            </a> 
+          </li>
+        <!-- The non-active class -->
+        {% else %}
+          <li class = "nav-item">
+            <a class = "nav-link" href = "{{ node.link }}">
+              {{ node.name }}
+            </a> 
+          </li>      
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </nav>
+</div>
