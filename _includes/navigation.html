@@ -1,22 +1,30 @@
 <div class = "container">
-  <nav>
-    <ul class = "nav nav-tabs" id = "nav-tab">
-      {% for node in site.data.navigation %}
-        {% if page.url == node.link %}
-          <li class = "nav-item active nav-customizer">
-            <a class = "nav-link active" href = "{{ node.link }}">
-              {{ node.name }}
-            </a> 
-          </li>
-        <!-- The non-active class -->
-        {% else %}
-          <li class = "nav-item">
-            <a class = "nav-link" href = "{{ node.link }}">
-              {{ node.name }}
-            </a> 
-          </li>      
-        {% endif %}
-      {% endfor %}
-    </ul>
-  </nav>
+  <!-- Check if we are displaying the navigation -->
+  {% if site.show_navigation %}
+    <nav class = "d-inline-block">
+      <ul class = "nav nav-tabs" id = "nav-tab">
+        {% for node in site.data.navigation %}
+          {% if page.url == node.link %}
+            <li class = "nav-item active nav-customizer">
+              <a class = "nav-link active" href = "{{ node.link }}">
+                {{ node.name }}
+              </a> 
+            </li>
+          <!-- The non-active class -->
+          {% else %}
+            <li class = "nav-item">
+              <a class = "nav-link" href = "{{ node.link }}">
+                {{ node.name }}
+              </a> 
+            </li>      
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </nav>
+  {% endif %}
+  
+  <!-- Check if we are displaying the search bar -->
+  {% if site.show_search_bar %}
+  
+  {% endif %}
 </div>

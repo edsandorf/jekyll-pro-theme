@@ -1,5 +1,7 @@
 remote_theme: edsandorf/pro-theme
 
+show_navigation: true
+show_search_bar: true
 show_downloads: true
 to_the_top: true
 
