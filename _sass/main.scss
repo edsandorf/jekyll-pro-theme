@@ -149,6 +149,44 @@ a {
   box-shadow: none !important;
 }
 
+
+/* Feed */
+.feed-list {
+  list-style-type: none;
+}
+
+.feed-list-element {
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.feed-title {
+  margin-top: 0rem;
+}
+
+.feed-img {
+  border: 1px $theme-gray solid;
+  border-radius: 4px;
+  padding: 5px;
+
+  
+  &:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 150, 186, 0.5);
+  }
+}
+
+.feed-left {
+  position: absolute;
+  top: 5px;
+  width: 150px;
+  min-width: 150px;
+}
+
+.feed-right {
+  margin-left: 160px;
+  width: calc(100% - 160px);
+}
+
 /* Blockquote */
 blockquote {
   padding: 0 1rem;
