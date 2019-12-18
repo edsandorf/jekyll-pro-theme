@@ -1,9 +1,0 @@
-defaults:
-  - scope:
-      path: "/docs/index.*"
-    values:
-      layout: "landing-page"
-  - scope:
-      path: ""
-    values:
-      layout: "default"
