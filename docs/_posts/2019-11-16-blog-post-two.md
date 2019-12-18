@@ -3,7 +3,7 @@ title: Lorem ipsum dolor sit amet
 author: Erlend
 category: blog
 tags: lorem dolor sit
-image: placeholder640x480.jpg
+image: "/assets/img/placeholder640x480.jpg"
 excerpt: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 ---
 
