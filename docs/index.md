@@ -1,4 +1,5 @@
 ---
+layout: landing-page
 title: Welcome to pro-theme!
 ---
 

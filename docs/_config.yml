@@ -9,14 +9,3 @@ e_mail: e.d.sandorf@stir.ac.uk
 github_handle: edsandorf
 linkedin_handle: erlend-dancke-sandorf
 twitter_handle: EDSandorf
-
-defaults:
-  - scope:
-      path: "index.*"
-    values:
-      layout: "landing_page"
-  - scope:
-      path: ""
-    values:
-      layout: "default"
-      
