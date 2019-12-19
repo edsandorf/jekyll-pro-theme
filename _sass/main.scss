@@ -9,12 +9,9 @@ body {
   line-height: 1.5;
   color: $text-color;
   font-family: Verdana, Geneva, sans-serif;
-  -ms-overflow-style: none;
+
 }
 
-::-webkit-scrollbar {
-  display: none;
-}
 
 /* Images */
 img {
