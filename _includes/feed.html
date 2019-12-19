@@ -2,7 +2,13 @@
   <div class = "row">
     <div class = "col-lg-12 col-lg-offset-2">
       <ul class = "container feed-list">
-        {% for post in site.posts %}
+        <!-- Test if page.category is specified and filter list to be output -->
+        {% if page.category And page.category != empty And page.category != nil %}
+          {% assign list_of_posts = site.categories[page.category] %}
+        {% else %}
+          {% assign list_of_posts = site.posts %}
+        {% endif %}
+        {% for post in list_of_posts %}
           <li class = "feed-list-element">
             <div class = "d-inline-block feed-left">
               <a href = "{{ post.url }}">
