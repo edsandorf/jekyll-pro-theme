@@ -8,3 +8,6 @@
 
 #  Feed
 {% include feed.html %}
+
+# Card deck
+{% include carddeck.html %}

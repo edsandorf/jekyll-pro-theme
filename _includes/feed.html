@@ -12,7 +12,7 @@
             <div class = "d-inline-block feed-right">
               <h4 class = "feed-title"><a href="{{ post.url }}">{{ post.title }}</a></h4>
               <span>Published: {{ post.date | date_to_long_string }} </span>
-              <p>{{ post.excerpt }}</p>
+              <p class = "text-muted">{{ post.excerpt }}</p>
             </div>
           </li>
         {% endfor %}

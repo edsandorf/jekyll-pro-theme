@@ -1,0 +1,9 @@
+<div class = "card border-0 mt-2">
+  <a href = "{{ post.url }}"><img src = "/assets/img/{{ post.image }}" class = "card-img-top mx-auto" alt = "..."></a>
+  <div class = "card-body">
+    <h5 class = "card-title"><a href = "{{ post.url }}">{{ post.title }}</a></h5>
+    <span>Published: {{ post.date | date_to_long_string }} </span>
+    <p class = "text-muted">{{ post.excerpt }}</p>
+  </div>
+  <div class = "card-footer bg-white border-0"><a href = "{{ post.url }}" class = "btn btn-info">Read more</a></div>
+</div>

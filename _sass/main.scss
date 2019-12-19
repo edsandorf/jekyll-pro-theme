@@ -188,6 +188,12 @@ a {
   width: calc(100% - 160px);
 }
 
+.card-img-top {
+    &:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 150, 186, 0.5);
+  }
+}
+
 /* Blockquote */
 blockquote {
   padding: 0 1rem;
