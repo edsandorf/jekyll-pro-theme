@@ -194,22 +194,7 @@ a {
   }
 }
 
-/* Blockquote */
-blockquote {
-  padding: 0 1rem;
-  margin-left: 0;
-  color: $blockquote-text-color;
-  border-left: 0.3rem solid $border-color;
 
-  > :first-child {
-    margin-top: 0;
-  }
-
-  > :last-child {
-    margin-bottom: 0;
-  }
-}
-  
 .card-button {
   border: none;
   outline: none;
@@ -223,6 +208,23 @@ blockquote {
     background-color: $header-bg-color;
     text-decoration: none;
     color: white;
+  }
+}
+
+
+/* Blockquote */
+blockquote {
+  padding: 0 1rem;
+  margin-left: 0;
+  color: $blockquote-text-color;
+  border-left: 0.3rem solid $border-color;
+
+  > :first-child {
+    margin-top: 0;
+  }
+
+  > :last-child {
+    margin-bottom: 0;
   }
 }
 
