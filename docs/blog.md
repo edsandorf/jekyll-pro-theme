@@ -1,6 +1,6 @@
 ---
-  layout: default
-  title: Blog posts
+layout: default
+title: Blog posts
 ---
 
 #  Timeline
