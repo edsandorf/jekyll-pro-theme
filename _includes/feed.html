@@ -1,16 +1,22 @@
-<ul class = "container feed-list">
-  {% for post in site.posts %}
-    <li class = "feed-list-element">
-      <div class = "d-inline-block feed-left">
-        <a href = "{{ post.url }}">
-          <img class = "feed-img" src = "{{ post.image }}">
-        </a>
-      </div>
-      <div class = "d-inline-block feed-right">
-        <h4 class = "feed-title"><a href="{{ post.url }}">{{ post.title }}</a></h4>
-        <span>Published: {{ post.date | date_to_long_string }} </span>
-        <p>{{ post.excerpt }}</p>
-      </div>
-    </li>
-  {% endfor %}
-</ul>
+<div class = "container">
+  <div class = "row">
+    <div class = "col-lg-12 col-lg-offset-2">
+      <ul class = "container feed-list">
+        {% for post in site.posts %}
+          <li class = "feed-list-element">
+            <div class = "d-inline-block feed-left">
+              <a href = "{{ post.url }}">
+                <img class = "feed-img" src = "/assets/img/{{ post.image }}">
+              </a>
+            </div>
+            <div class = "d-inline-block feed-right">
+              <h4 class = "feed-title"><a href="{{ post.url }}">{{ post.title }}</a></h4>
+              <span>Published: {{ post.date | date_to_long_string }} </span>
+              <p>{{ post.excerpt }}</p>
+            </div>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
