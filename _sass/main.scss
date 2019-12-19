@@ -161,6 +161,11 @@ a {
   position: relative;
 }
 
+.feed-list-element-extra {
+  margin-bottom: 100px;
+  position: relative;
+}
+
 .feed-title {
   margin-top: 0rem;
 }
@@ -181,11 +186,13 @@ a {
   top: 5px;
   width: 150px;
   min-width: 150px;
+  max-height: 150px;
 }
 
 .feed-right {
   margin-left: 160px;
   width: calc(100% - 160px);
+  height: 100%;
 }
 
 .card-img-top {
