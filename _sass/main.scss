@@ -40,7 +40,7 @@ a {
   text-decoration: none;
   
   &:hover {
-    color: $text-color;
+    color: $heading-color;
     text-decoration: none;
   }
 }
@@ -119,7 +119,7 @@ a {
 }
 
 .nav-link-customizer {
-  color: $theme-black;
+  color: white;
 }
 
 /* Removes the bottom grey border form the nav-tabs */
@@ -172,7 +172,7 @@ a {
 
   
   &:hover {
-    box-shadow: 0 0 2px 1px rgba(0, 150, 186, 0.5);
+    box-shadow: 0 0 2px 1px $heading-color;
   }
 }
 
@@ -190,7 +190,7 @@ a {
 
 .card-img-top {
     &:hover {
-    box-shadow: 0 0 2px 1px rgba(0, 150, 186, 0.5);
+    box-shadow: 0 0 2px 1px $heading-color;
   }
 }
 
@@ -210,7 +210,22 @@ blockquote {
   }
 }
   
+.card-button {
+  border: none;
+  outline: none;
+  margin: 0px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: $header-bg-color-secondary;
+  color: white;
   
+  &:hover {
+    background-color: $header-bg-color;
+    text-decoration: none;
+    color: white;
+  }
+}
+
 /* To-the-top button */
 #myBtn .fas {
   color: white;
@@ -228,30 +243,31 @@ blockquote {
   margin: 0;
   padding: 0 5px;
   border-radius: 5px; /* Rounded corners */
-  background-color: $header-bg-color;
+  background-color: $header-bg-color-secondary;
   color: white;
   
   &:hover {
-    background-color: $text-color;
+    background-color: $header-bg-color;
     text-decoration: none;
+    color: white;
   }
 }
 
 /* Footer */
 .fab {
-  color: $header-bg-color;
+  color: $header-bg-color-secondary;
   
   &:hover {
-    color: $text-color;
+    color: $header-bg-color;
     text-decoration: none;
   }  
 }
 
 .fas {
-  color: $header-bg-color;
+  color: $header-bg-color-secondary;
   
   &:hover {
-    color: $text-color;
+    color: $header-bg-color;
     text-decoration: none;
   }
 }
