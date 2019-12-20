@@ -153,6 +153,7 @@ Let us create our first blog post: `2019-12-19-my-first-blog-post.md` and place 
 
 ```txt
 ---
+layout: post
 title: My first blog post
 author: Erlend
 category: blog
@@ -163,7 +164,7 @@ excerpt: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 ```
 
-The YAML for the blog post consists of the `title`, `author`, `category`, `image`, and `excerpt`. Only `title` is necessary, but specifying the others avoid reverting to defaults. If you do not specify a post image, pro-theme will default to a stock image. The image is taken from [Pixabay](https://pixabay.com/photos/water-drop-liquid-splash-wet-1761027/) and is distributed under the [Pixabay License](https://pixabay.com/service/license/). 
+The YAML for the blog post consists of the `layout`, `title`, `author`, `category`, `image`, and `excerpt`. Only `title` is necessary, but specifying the others avoid reverting to defaults. If you do not specify a post image, pro-theme will default to a stock image. The image is taken from [Pixabay](https://pixabay.com/photos/water-drop-liquid-splash-wet-1761027/) and is distributed under the [Pixabay License](https://pixabay.com/service/license/). 
 
 While creating a sub-directory for blogs is not strictly necessary, I find it helpful to use subdirectories to better keep track of different type of posts, e.g. news or publications. Top tip when using pro-theme: Always specify the category to be the type of post you are writing. We have created a post, but nothing on our website is linking to our new blog post. Pro-theme comes with three different ways of autmatically adding, updating and displaying new blog posts: 1) A post timeline, 2) a feed, and 3) a "card deck". For an example of each type, look at the examples [here]({{ site.url }}/feed.html) 
 
