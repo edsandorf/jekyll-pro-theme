@@ -11,3 +11,7 @@ Gemfile.lock
 *.Rproj
 
 .vs/
+
+_data/
+search.json
+_config.yml
