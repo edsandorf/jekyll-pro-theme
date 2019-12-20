@@ -1,3 +1,5 @@
+{% assign default-img-url = "https://github.com/edsandorf/pro-theme/blob/master/assets/img/default-img.jpg?raw=true" %}
+
 <div class = "container">
   <ul class = "feed-list">
     <!-- Test if page.category is specified and filter list to be output -->
@@ -12,7 +14,7 @@
           <!-- Image column -->
           <div class = "col-md-2 col-md-offset-2">
             <a href = "{{ post.url }}">
-              <img class = "feed-img" src = "{{ site.baseurl }}{% if post.image %}{{ post.image }}{% else %}{{site.default-img}}{% endif %}">
+              <img class = "feed-img" src = "{% if post.image %}{{ site.baseurl }}{{ post.image }}{% else %}{{default-img-url}}{% endif %}">
             </a>
           </div>
           <!-- Title, date and excerpt column -->
