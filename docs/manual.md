@@ -212,6 +212,7 @@ The timeline implemented here is modified from Kirby Turner's [timeline-jekyll-t
 ```
 {% endraw %}
 
+The timeline works best when it is allowed to occupy a the full page on its own. It does not work great when used in combination with a twitter feed
 
 ## Adding a post feed
 To add the post feed, simply add the following include statement to your site where you want the timeline to be. 
