@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang = "{{ site.lang | default: "en-US" }}">
+  {% include head.html %}
+  
+  <body>
+    {% include js.html %}
+    
+    {% include navigation.html %}
+
+    <!-- Check if the page is a landing page -->
+    {% if page.landing-page %}
+      {% include header-jumbo.html %}
+    {% else %}
+      {% include header.html %}
+    {% endif %}
+    
+    <div class = "container">
+      <div class = "row">
+        <div class = "col-md-8">
+          {{ content }}    
+        </div>
+        <div class = "col-md-4">
+          <div>
+            <a class="twitter-timeline noscrollbar" data-tweet-limit = "{{ page.tweet-display }}" href="https://twitter.com/{{ site.twitter_handle }}?ref_src=twsrc%5Etfw">Tweets by site.twitter_handle</a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    {% if site.to_the_top %}
+      {% include to-the-top.html %}
+    {% endif %}
+    
+    {% include footer.html %}
+    
+  </body>
+</html>

@@ -148,6 +148,18 @@ to_the_top: true
 ### Adding download buttons to the landing page banner
 
 
+### Embedding a twitter feed
+In pro-theme you can embed a twitterfeed as the right column on a page. To do so, you must have specified your twitter handle in `_config.yml` (see above) and you must specify the following in the YAML of the page where you want to embed the twitter feed: 
+
+```txt
+---
+layout: twitter
+tweet-display: 5
+---
+```
+
+The `layout` argument tells pro-theme that you want a twitter page, and the `tweet-display` is the number of tweets you want to display. 
+
 # Adding blog posts to your site
 
 Let us create our first blog post: `2019-12-19-my-first-blog-post.md` and place it in `/_posts/blog`. 
