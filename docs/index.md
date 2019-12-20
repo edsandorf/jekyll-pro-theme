@@ -3,72 +3,22 @@ layout: landing-page
 title: Welcome to pro-theme!
 ---
 
-![Placeholder1080p](https://dummyimage.com/1920x1080/dcdcdc/fff.jpg)
+Pro-theme is a simple [Jekyll](https://jekyllrb.com/) theme to use with [GitHub Pages](https://pages.github.com). The theme is based on [Bootstrap 4](https://getbootstrap.com/), makes use of the [Font Awesome](https://fontawesome.com/) icon set and [Prism](https://prismjs.com/) for code syntax highlighting. Bootstrap's responsive CSS classes ensures that the theme also works on mobile devices.
 
-# Header 1
+The idea for the theme was borne out of a need to have a uniform look to my professional web site and my Github project websites. The theme is constantly evolving and changing to fit my changing needs as my projects develop. Creating a theme was a way for me to keep code duplication to a minimum and make maintenance easier across my projects. Hopefully, someone else will also find it useful.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et sollicitudin ac orci phasellus egestas.
+# Release notes
+## pro-theme v.0.1.0
+* Initial release
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum tempus egestas sed sed risus.
-
-> This is a blockquote
->
-> Sometimes I say important things, although, let's be honest: It is usually someone else who says the important things.
-
-
-## Header 2
-
-It is easy to create good looking lists when writing your website using Markdown.
-
-### Unordered list
-
-* List item
-* List item
-* List item
-
-### Ordered list
-
-1. List item
-2. List item
-3. List item
-
-### Nested lists
-
-- List item
-  - Nested list item
-  - Nested list item
-    - Nested list item
-- List item
-- List item
+# Contributing to pro-theme
+1. Go to GitHub and create an account if you don't have one.
+2. Fork the project and clone it locally on your computer. Make sure that the repository is synced remotely before you move on to the next step.
+3. Create a new branch for each bug fix or new feature you want to add.
+4. Do the work and write a descriptive commit message. If you have added a new feature, please contribute documentation and tests. 
+5. Push the changes to your remote repository.
+6. Create a new pull request for each bug fix or new feature added.
+7. Respond to any code review feedback.
 
 
-### Header 3
-
-Writing documents in markdown allows the author to include blocks of code with syntax highlighting. 
-
-```r
-# This is some R code
-x <- 1:5
-
-squared <- function (x) {
-  x^2
-}
-
-squared(x)
-```
-
-#### Header 4
-
-We can also include smaller images throughout the text
-
-![Placeholder480p](https://dummyimage.com/640x480/dcdcdc/fff.jpg)
-
-
-##### Header 5
-
-The theme is based on [Bootstrap 4](https://getbootstrap.com/) and makes use of the [Font Awesome](https://fontawesome.com/) icon set.
-
-
-
-
-
+This list is based on a great post on [how to contribute](https://akrabat.com/the-beginners-guide-to-contributing-to-a-github-project/) to a github project. 
