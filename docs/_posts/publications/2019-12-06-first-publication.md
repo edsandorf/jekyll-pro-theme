@@ -3,7 +3,6 @@ title: First publication
 author: Erlend
 category: publication
 tags: id est loborum
-image: "/assets/img/placeholder600x600.jpg"
 excerpt: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 ---
 
