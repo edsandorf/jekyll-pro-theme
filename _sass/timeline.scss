@@ -70,11 +70,12 @@ Some modifications to fit the current theme.
     width: 80px;
     height: 80px;
     margin-left: 0;
-    border: 7px solid #f1f1f1;
+    padding: 5px;
+    border: 1px solid $theme-gray;
     border-radius: 100%;
     text-align: center;
     color: #fff;
-    background-color: #f1f1f1;
+    background-color: white;
 }
 
 .timeline>li .timeline-image h4 {
