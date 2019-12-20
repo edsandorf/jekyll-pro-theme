@@ -2,9 +2,7 @@
   link: /
 - name: Manual
   link: /manual.html
+- name: Post feeds
+  link: /feed.html  
 - name: Examples
   link: /examples.html
-- name: Blog
-  link: /blog.html
-- name: About
-  link: /about.html
