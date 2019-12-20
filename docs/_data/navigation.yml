@@ -3,6 +3,8 @@
 - name: Manual
   link: /manual.html
 - name: Post feeds
-  link: /feed.html  
+  link: /feed.html
+- name: Twitter feed
+  link: /twitter_page.html
 - name: Examples
   link: /examples.html
