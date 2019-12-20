@@ -7,7 +7,7 @@
       {% else %}
         {% assign list_of_posts = site.posts %}
       {% endif %}
-      {% for post in list_of_posts %}
+      {% for post in list_of_posts limit: page.display %}
         {% assign loop_index = forloop.index %}
         {% assign row_finder = loop_index | modulo: 4 %}
         {% if row_finder == 1 %}

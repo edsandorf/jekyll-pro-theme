@@ -8,7 +8,7 @@
     {% else %}
       {% assign list_of_posts = site.posts %}
     {% endif %}
-    {% for post in list_of_posts %}
+    {% for post in list_of_posts limit: page.display %}
       <li class = "feed-list-element">
         <div class = "row">
           <!-- Image column -->
