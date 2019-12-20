@@ -93,7 +93,7 @@
 <!-- The configuration script -->
 <script>
   SimpleJekyllSearch({
-    searchResultTemplate: '<div class = "feed-list-element-extra"><div class = "d-inline-block feed-left"><a href = {url}><img class = "feed-img" src = {image}></a></div><div class = "d-inline-block feed-right"><h4 class = "feed-title"><a href= {url}>{title}</a></h4><span>Published: {date} </span></div></div>',
+    searchResultTemplate: '<div class = "row feed-list-element"><div class = "col-md-2 col-md-offset-2"><a href = {url}><img class = "feed-img" src = {image}></a></div><div class = "col-md-10 col-md-offset-2"><h4 class = "feed-title"><a href={url}>{title}</a></h4><span>Published: {date} </span></div></div>',
     searchInput: document.getElementById('search-input'),
     resultsContainer: document.getElementById('results-container'),
     json: '../search.json'
