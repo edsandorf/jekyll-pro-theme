@@ -19,7 +19,7 @@
           <li class = "{{ class }}">
             <div class = "timeline-image">
               <a href = "{{ post.url }}">
-                <img class = "rounded-circle img-responsive" src = "/assets/img/{{ post.image }}"> <!-- Consider adding a default img if image not supplied -->
+                <img class = "rounded-circle img-responsive" src = "{% if post.image %}/assets/img/{{ post.image }}{% else %}{{ site.default-img }}{% endif %}"> <!-- Consider adding a default img if image not supplied -->
               </a>
             </div>
             <div class = "timeline-panel">
@@ -36,7 +36,7 @@
         {% endfor %}
         <li class = "timeline-inverted">
           <div class = "timeline-image">
-            <img class = "rounded-circle img-responsive" src = "/assets/img/placeholder600x600.jpg">
+            <img class = "rounded-circle img-responsive" src = "{% if page.image %}/assets/img/{{ page.image }}{% else %}{{ site.default-image }}{% endif %}">
           </div>
         </li>
       </ul>
