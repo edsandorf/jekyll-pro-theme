@@ -1,6 +1,8 @@
 ---
 layout: null
 ---
+{% assign default-img-url = "https://github.com/edsandorf/pro-theme/blob/master/assets/img/default-img.jpg?raw=true" %}
+
 [
   {% for post in site.posts %}
     {
@@ -10,7 +12,7 @@ layout: null
       "tags"     : "{{ post.tags | join: ', ' }}",
       "url"      : "{{ site.baseurl }}{{ post.url }}",
       "date"     : "{{ post.date | date_to_long_string }}",
-      "image"    : "{{ site.baseurl }}{% if post.image %}{{ post.image }}{% else %}{{site.default-img}}{% endif %}"
+      "image"    : "{{ site.baseurl }}{% if post.image %}{{ post.image }}{% else %}{{default-img-url}}{% endif %}"
     } {% unless forloop.last %}, {% endunless %}
   {% endfor %}
 ]
