@@ -1,5 +1,6 @@
 ---
-layout: landing-page
+layout: default
+landing-page: true
 title: Welcome to pro-theme!
 ---
 
