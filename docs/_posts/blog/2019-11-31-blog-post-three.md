@@ -3,7 +3,7 @@ title: Lorem ipsum dolor sit amet
 author: Erlend
 category: blog
 tags: id est loborum
-image: "placeholder600x600.jpg"
+image: "/assets/img/placeholder600x600.jpg"
 excerpt: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 ---
 
