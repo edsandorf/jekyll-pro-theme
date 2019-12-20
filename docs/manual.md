@@ -38,7 +38,8 @@ NOTE: The pro-theme is continuously under development. To use pro-theme with you
 
 ```language-yml
 ---
-layout: landing-page
+layout: default
+landing-page: true
 ---
 
 Hello world!
