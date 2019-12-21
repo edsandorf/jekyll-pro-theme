@@ -22,7 +22,7 @@ Some modifications to fit the current theme.
     left: 40px;
     width: 2px;
     margin-left: -1.5px;
-    background-color: #f1f1f1;
+    background-color: $theme-gray; /* Change */
 }
 
 .timeline>li {
@@ -71,11 +71,11 @@ Some modifications to fit the current theme.
     height: 80px;
     margin-left: 0;
     padding: 5px;
-    border: 1px solid $theme-gray;
+    border: 2px solid $theme-gray; /* Change */
     border-radius: 100%;
     text-align: center;
     color: #fff;
-    background-color: white;
+    background-color: white; /* Change */
 }
 
 .timeline>li .timeline-image h4 {
@@ -209,8 +209,9 @@ Some modifications to fit the current theme.
     }
 }
 
+/* Changed from original */
 .timeline-image {
     &:hover {
-    box-shadow: 0 0 2px 1px $heading-color;
+    box-shadow: 0 0 2px 1px $color-primary;
   }
 }

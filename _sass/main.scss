@@ -7,7 +7,7 @@
 body {
   font-size: 16px;
   line-height: 1.5;
-  color: $text-color;
+  color: $text-color-primary;
   font-family: Verdana, Geneva, sans-serif;
   -ms-overflow-style: none;
 }
@@ -37,25 +37,25 @@ h6 {
   margin-top: 2rem;
   margin-bottom: 1rem;
   font-weight: normal;
-  color: $heading-color;
+  color: $color-primary;
 }
 
 /* Hyperlinks */
 a {
-  color: $hyperlink-color;
+  color: $color-secondary;
   text-decoration: none;
   
   &:hover {
-    color: $heading-color;
+    color: $color-primary;
     text-decoration: none;
   }
 }
 
 /* Header */
 .page-header {
-  color: $header-heading-color;
-  background-color: $header-bg-color;
-  background-image: linear-gradient(360deg, $header-bg-color, $header-bg-color-secondary);
+  color: $text-color-secondary;
+  background-color: $color-primary;
+  background-image: linear-gradient(360deg, $color-primary, $color-secondary);
   min-height: 400px;
 }
 
@@ -64,38 +64,38 @@ a {
 }
 
 .page-header-text-color {
-  color: $header-heading-color;
+  color: $text-color-secondary;
 }
 
 .page-header-hr-color {
   background-color: transparent;
-  border-top: 1px solid $header-heading-color;
+  border-top: 1px solid $text-color-secondary;
 }
 
 .page-header a {
-  color: $header-heading-color;
+  color: $text-color-secondary;
   text-decoration: none;
   
   &:hover {
-    color: $text-color;
+    color: $text-color-primary;
     text-decoration: none;
   }
 }
 
 .page-header.fab {
-  color: $header-heading-color;
+  color: $text-color-secondary;
   
   &:hover {
-    color: $text-color;
+    color: $text-color-primary;
     text-decoration: none;
   }  
 }
 
 .page-header.fas {
-  color: $header-heading-color;
+  color: $text-color-secondary;
   
   &:hover {
-    color: $text-color;
+    color: $text-color-primary;
     text-decoration: none;
   }
 }
@@ -107,21 +107,21 @@ a {
 }
 
 .nav-item-customizer {
-  color: $header-heading-color;
-  background-color: $header-bg-color-secondary;
+  color: $text-color-secondary;
+  background-color: $color-secondary;
   border-left: 1px $theme-black solid;
   border-top: 1px $theme-black solid;
   border-right: 1px $theme-black solid;
   position: relative;
   top: 1.4px;
-  border-bottom: 1px $header-bg-color-secondary;
+  border-bottom: 1px $color-secondary;
   border-radius: .3em .3em 0em 0em;
 }
 
 .nav-item-customizer-collapsed {
   background-color: white;
   border: 0px;
-  color: $header-heading-color;
+  color: $text-color-secondary;
 }
 
 .nav-link-customizer {
@@ -134,7 +134,7 @@ a {
 }
 
 #toggleButton {
-  background-color: $header-bg-color-secondary;
+  background-color: $color-secondary;
   border-color: $theme-gray;
   padding: 7.5px 12.5px;
   margin: 5px;
@@ -143,7 +143,7 @@ a {
 /* Search */
 
 #searchButton {
-  background-color: $header-bg-color-secondary;
+  background-color: $color-secondary;
   border-color: $theme-gray;
   margin-left: 0px;
 }
@@ -173,7 +173,7 @@ a {
 
 .feed-img {
   position: relative;
-  border: 1px $theme-gray solid;
+  border: 2px $theme-gray solid;
   border-radius: 4px;
   padding: 5px;
   object-fit: cover;
@@ -182,10 +182,9 @@ a {
   min-height: 150px;
   
   &:hover {
-    box-shadow: 0 0 2px 1px $heading-color;
+    box-shadow: 0 0 2px 1px $color-primary;
   }
 }
-
 
 .search-img {
   @extend .feed-img;
@@ -195,7 +194,7 @@ a {
 /* Card deck */
 
 .card-img-extended {
-  border: 1px $theme-gray solid;
+  border: 2px $theme-gray solid;
   border-radius: 4px;
   padding: 5px;
   object-fit: cover;
@@ -204,7 +203,7 @@ a {
   min-height: 200px;
   
   &:hover {
-    box-shadow: 0 0 2px 1px $heading-color;
+    box-shadow: 0 0 2px 1px $color-primary;
   }
 }
 
@@ -214,11 +213,11 @@ a {
   margin: 0px;
   padding: 5px;
   border-radius: 5px;
-  background-color: $header-bg-color-secondary;
+  background-color: $color-secondary;
   color: white;
   
   &:hover {
-    background-color: $header-bg-color;
+    background-color: $color-primary;
     text-decoration: none;
     color: white;
   }
@@ -229,8 +228,8 @@ a {
 blockquote {
   padding: 0 1rem;
   margin-left: 0;
-  color: $blockquote-text-color;
-  border-left: 0.3rem solid $border-color;
+  color: $text-color-blockquote;
+  border-left: 0.3rem solid $color-primary;
 
   > :first-child {
     margin-top: 0;
@@ -258,11 +257,11 @@ blockquote {
   margin: 0;
   padding: 0 5px;
   border-radius: 5px; /* Rounded corners */
-  background-color: $header-bg-color-secondary;
+  background-color: $color-secondary;
   color: white;
   
   &:hover {
-    background-color: $header-bg-color;
+    background-color: $color-primary;
     text-decoration: none;
     color: white;
   }
@@ -270,19 +269,19 @@ blockquote {
 
 /* Footer */
 .fab {
-  color: $header-bg-color-secondary;
+  color: $color-secondary;
   
   &:hover {
-    color: $header-bg-color;
+    color: $color-primary;
     text-decoration: none;
   }  
 }
 
 .fas {
-  color: $header-bg-color-secondary;
+  color: $color-secondary;
   
   &:hover {
-    color: $header-bg-color;
+    color: $color-primary;
     text-decoration: none;
   }
 }

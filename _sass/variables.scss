@@ -1,23 +1,12 @@
-/* Headers */
-$header-heading-color: #fff !default;
-$header-bg-color: #358ccb !default;
-$header-bg-color-secondary: #46b2ff !default;
+/* Color pallette */
+$color-primary: #358ccb !default;
+$color-secondary: #46b2ff !default;
 
-/* Text color */
-$heading-color: #358ccb !default;
-$heading-color-secondary: #46b2ff !default;
 
-$text-color: #010203 !default;
-
-$hyperlink-color: #46b2ff !default;
-
-$blockquote-text-color: #949292 !default;
-
-/* Borders */
-$border-color: #358ccb !default;
+$text-color-primary: #010203 !default;
+$text-color-secondary: #fff !default;
+$text-color-blockquote: #949292 !default;
 
 /* Other */
-$theme-gray: #ced4da;
+$theme-gray: #f1f1f1;
 $theme-black: #343a40;
-
-$code-background: #f7f7f7;
