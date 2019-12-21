@@ -104,9 +104,15 @@ a {
 .navbar-container {
   background-color: white;
   border-bottom: 1px $theme-black solid;
+  padding-bottom: 7px;
 }
 
-.nav-item-customizer {
+.nav-item-customizer-underline {
+  color: $color-secondary;
+  border-bottom: 4px $color-primary solid;
+}
+
+.nav-item-customizer-tab {
   color: $text-color-secondary;
   background-color: $color-secondary;
   border-left: 1px $theme-black solid;
@@ -118,19 +124,18 @@ a {
   border-radius: .3em .3em 0em 0em;
 }
 
-.nav-item-customizer-collapsed {
+.nav-item-customizer-tab-collapsed {
   background-color: white;
   border: 0px;
   color: $text-color-secondary;
 }
 
-.nav-link-customizer {
+.nav-link-customizer-tab {
   color: white;
 }
 
-/* Removes the bottom grey border form the nav-tabs */
 .nav-tabs {
-  border-bottom: 0px;
+  border-bottom: 0px; /* Removes the bottom grey border form the nav-tabs */
 }
 
 #toggleButton {
@@ -140,8 +145,8 @@ a {
   margin: 5px;
 }
 
-/* Search */
 
+/* Search */
 #searchButton {
   background-color: $color-secondary;
   border-color: $theme-gray;

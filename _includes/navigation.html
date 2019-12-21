@@ -16,8 +16,8 @@
           <ul class = "navbar-nav mr-auto" id = "nav-tab">
             {% for node in site.data.navigation %}
               {% if page.url == node.link %}
-                <li class = "nav-item  nav-item-customizer">
-                  <a class = "nav-link nav-link-customizer" href = "{{ node.link }}">
+                <li class = "nav-item  nav-item-customizer-underline">
+                  <a class = "nav-link" href = "{{ node.link }}">
                     {{ node.name }}
                   </a> 
                 </li>
@@ -69,12 +69,13 @@
   </div>
 </div>  
 
-<!-- Script to toggle class when the navbar collapses -->
+<!-- Script to toggle class when the navbar collapses 
 <script>
   $(".navbar-toggler").click(function () {
     $("li").toggleClass("nav-item-customizer-collapsed");
   })
 </script>
+-->
 
 <!-- Add javascript to let enter open the modal -->
 <script>
