@@ -1,0 +1,18 @@
+#searchButton {
+  background-color: $color-secondary;
+  border-color: $theme-gray;
+  margin-left: 0px;
+}
+
+.form-control:focus {
+  box-shadow: none !important;
+}
+
+.btn:focus {
+  box-shadow: none !important;
+}
+
+.search-img {
+  @extend .feed-img;
+  min-height: 100px;
+}

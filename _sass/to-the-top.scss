@@ -1,0 +1,25 @@
+#myBtn .fas {
+  color: white;
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 0px; /* Place the button at the bottom of the page */
+  right: calc(0px); 
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  margin: 0;
+  padding: 0 5px;
+  border-radius: 5px; /* Rounded corners */
+  background-color: $color-secondary;
+  color: white;
+  
+  &:hover {
+    background-color: $color-primary;
+    text-decoration: none;
+    color: white;
+  }
+}

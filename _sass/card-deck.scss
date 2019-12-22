@@ -1,0 +1,29 @@
+.card-img-extended {
+  border: 2px $theme-gray solid;
+  border-radius: 4px;
+  padding: 5px;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  min-height: 200px;
+  
+  &:hover {
+    box-shadow: 0 0 2px 1px $color-primary;
+  }
+}
+
+.card-button {
+  border: none;
+  outline: none;
+  margin: 0px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: $color-secondary;
+  color: white;
+  
+  &:hover {
+    background-color: $color-primary;
+    text-decoration: none;
+    color: white;
+  }
+}

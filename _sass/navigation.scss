@@ -1,0 +1,43 @@
+.navbar-container {
+  background-color: white;
+  border-bottom: 1px $theme-black solid;
+  padding-bottom: 7px;
+}
+
+.nav-item-customizer-underline {
+  color: $color-secondary;
+  border-bottom: 4px $color-primary solid;
+}
+
+.nav-item-customizer-tab {
+  color: $text-color-secondary;
+  background-color: $color-secondary;
+  border-left: 1px $theme-black solid;
+  border-top: 1px $theme-black solid;
+  border-right: 1px $theme-black solid;
+  position: relative;
+  top: 1.4px;
+  border-bottom: 1px $color-secondary;
+  border-radius: .3em .3em 0em 0em;
+}
+
+.nav-item-customizer-tab-collapsed {
+  background-color: white;
+  border: 0px;
+  color: $text-color-secondary;
+}
+
+.nav-link-customizer-tab {
+  color: white;
+}
+
+.nav-tabs {
+  border-bottom: 0px; /* Removes the bottom grey border form the nav-tabs */
+}
+
+#toggleButton {
+  background-color: $color-secondary;
+  border-color: $theme-gray;
+  padding: 7.5px 12.5px;
+  margin: 5px;
+}

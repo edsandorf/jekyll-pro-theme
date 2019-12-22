@@ -1,7 +1,13 @@
 /* Import variables */
 @import "variables";
 @import "prism";
+@import "navigation";
+@import "search";
 @import "timeline";
+@import "card-deck";
+@import "feed";
+@import "to-the-top";
+
 
 /* Body */
 body {
@@ -100,135 +106,6 @@ a {
   }
 }
 
-/* Navigation */
-.navbar-container {
-  background-color: white;
-  border-bottom: 1px $theme-black solid;
-  padding-bottom: 7px;
-}
-
-.nav-item-customizer-underline {
-  color: $color-secondary;
-  border-bottom: 4px $color-primary solid;
-}
-
-.nav-item-customizer-tab {
-  color: $text-color-secondary;
-  background-color: $color-secondary;
-  border-left: 1px $theme-black solid;
-  border-top: 1px $theme-black solid;
-  border-right: 1px $theme-black solid;
-  position: relative;
-  top: 1.4px;
-  border-bottom: 1px $color-secondary;
-  border-radius: .3em .3em 0em 0em;
-}
-
-.nav-item-customizer-tab-collapsed {
-  background-color: white;
-  border: 0px;
-  color: $text-color-secondary;
-}
-
-.nav-link-customizer-tab {
-  color: white;
-}
-
-.nav-tabs {
-  border-bottom: 0px; /* Removes the bottom grey border form the nav-tabs */
-}
-
-#toggleButton {
-  background-color: $color-secondary;
-  border-color: $theme-gray;
-  padding: 7.5px 12.5px;
-  margin: 5px;
-}
-
-
-/* Search */
-#searchButton {
-  background-color: $color-secondary;
-  border-color: $theme-gray;
-  margin-left: 0px;
-}
-
-.form-control:focus {
-  box-shadow: none !important;
-}
-
-.btn:focus {
-  box-shadow: none !important;
-}
-
-
-/* Feed */
-.feed-list {
-  list-style-type: none;
-}
-
-.feed-list-element {
-  margin-bottom: 25px;
-  position: relative;
-}
-
-.feed-title {
-  margin-top: 0rem;
-}
-
-.feed-img {
-  position: relative;
-  border: 2px $theme-gray solid;
-  border-radius: 4px;
-  padding: 5px;
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  min-height: 150px;
-  
-  &:hover {
-    box-shadow: 0 0 2px 1px $color-primary;
-  }
-}
-
-.search-img {
-  @extend .feed-img;
-  min-height: 100px;
-}
-
-/* Card deck */
-
-.card-img-extended {
-  border: 2px $theme-gray solid;
-  border-radius: 4px;
-  padding: 5px;
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  min-height: 200px;
-  
-  &:hover {
-    box-shadow: 0 0 2px 1px $color-primary;
-  }
-}
-
-.card-button {
-  border: none;
-  outline: none;
-  margin: 0px;
-  padding: 5px;
-  border-radius: 5px;
-  background-color: $color-secondary;
-  color: white;
-  
-  &:hover {
-    background-color: $color-primary;
-    text-decoration: none;
-    color: white;
-  }
-}
-
-
 /* Blockquote */
 blockquote {
   padding: 0 1rem;
@@ -242,33 +119,6 @@ blockquote {
 
   > :last-child {
     margin-bottom: 0;
-  }
-}
-
-/* To-the-top button */
-#myBtn .fas {
-  color: white;
-}
-
-#myBtn {
-  display: none; /* Hidden by default */
-  position: fixed; /* Fixed/sticky position */
-  bottom: 0px; /* Place the button at the bottom of the page */
-  right: calc(0px); 
-  z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  margin: 0;
-  padding: 0 5px;
-  border-radius: 5px; /* Rounded corners */
-  background-color: $color-secondary;
-  color: white;
-  
-  &:hover {
-    background-color: $color-primary;
-    text-decoration: none;
-    color: white;
   }
 }
 
