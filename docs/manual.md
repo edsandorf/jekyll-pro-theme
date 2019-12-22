@@ -131,6 +131,15 @@ twitter_handle: [Your Twitter handle]
 ```
 The icons and links will be added to the footer of the website. At the moment only E-mail, Github, LinkedIn and Twitter are supported.
 
+### Adding creator name to the footer
+If you want to add your name to the footer as the creator of the website, you can do so by adding the following to your site's YAML: 
+
+```yml
+creator: Erlend
+```
+
+Now, the site will display the text: Created by Erlend in the footer. 
+
 ### Adding Google Analytics
 You can add Google Analytics by adding the following to your `_config.yml`.
 
