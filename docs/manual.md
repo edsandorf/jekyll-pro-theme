@@ -155,7 +155,11 @@ to_the_top: true
 ```
 
 ### Adding download buttons to the landing page banner
+You can easily add download buttons to the landing page header that allow visitors to download the source of your page and project from Github. Just add the following to your sites YAML.
 
+```yaml
+show_downloads: true
+```
 
 ### Embedding a twitter feed
 In pro-theme you can embed a twitterfeed as the right column on a page. To do so, you must have specified your twitter handle in `_config.yml` (see above) and you must specify the following in the YAML of the page where you want to embed the twitter feed: 
@@ -340,5 +344,8 @@ Your folder and file structure will look something like this:
 |_ search.json
 
 ```
+
+# Other layouts and extensions
+
 
 # Previewing the website locally
