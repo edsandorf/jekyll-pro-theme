@@ -5,17 +5,20 @@
   <body>
     {% include js.html %}
     
-    {% include navigation.html %}
-
-    {% include header-jumbo.html %}
+    <div class = "body-push">
+      {% include navigation.html %}
     
-    <div class = "container mt-4">
-      {{ content }}
+      <!-- Check if the page is a landing page -->
+      {% include header-jumbo.html %}
+    
+      <div class = "container container-extended">
+        {{ content }}
+      </div>
+    
+      {% if site.to_the_top %}
+        {% include to-the-top.html %}
+      {% endif %}
     </div>
-    
-    {% if site.to_the_top %}
-      {% include to-the-top.html %}
-    {% endif %}
     
     {% include footer.html %}
     
