@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Blog posts
+title: Post feeds
+subtitle: Example of different post feeds to use with Jekyll-Pro-Theme
 ---
 
 #  Timeline

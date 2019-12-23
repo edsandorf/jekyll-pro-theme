@@ -1,6 +1,7 @@
 ---
-  layout: default
-  title: A manual for getting started with pro-theme
+layout: default
+title: Getting started with Jekyll-Pro-Theme
+subtitle: A short user manual outlining the main features of Jekyll-Pro-Theme
 ---
 
 # Getting started

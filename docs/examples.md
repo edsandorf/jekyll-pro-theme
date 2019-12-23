@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Examples of how different page elements are styled
+title: Page element examples
+subtitle: A page with examples of how various page elements look with Jekyll-Pro-Theme
 ---
 
 ![Placeholder1080p](https://dummyimage.com/1920x1080/dcdcdc/fff.jpg)
