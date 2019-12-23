@@ -109,23 +109,18 @@ a {
   }
 }
 
-/* Blockquote */
-blockquote {
-  padding: 0 1rem;
-  margin-left: 0;
-  color: $text-color-blockquote;
-  border-left: 0.3rem solid $color-primary;
-
-  > :first-child {
-    margin-top: 0;
-  }
-
-  > :last-child {
-    margin-bottom: 0;
-  }
+/* Footer */
+.body-push {
+  min-height: calc(100vh - 200px); // subtract the height + margin of footer
 }
 
-/* Footer */
+.page-footer {
+  margin-top: 50px;
+  padding: 50px 0px;
+  background-color: white;
+  height: calc(100px + 50px);
+}
+
 .fab {
   color: $color-secondary;
   
@@ -143,3 +138,22 @@ blockquote {
     text-decoration: none;
   }
 }
+
+
+
+/* Blockquote */
+blockquote {
+  padding: 0 1rem;
+  margin-left: 0;
+  color: $text-color-blockquote;
+  border-left: 0.3rem solid $color-primary;
+
+  > :first-child {
+    margin-top: 0;
+  }
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
