@@ -5,14 +5,15 @@
   <body>
     {% include js.html %}
     
-    {% include navigation.html %}
+    <div class = "body-push">
+      {% include navigation.html %}
     
-    {% include header.html %}
-    
+      <!-- Check if the page is a landing page -->
+      {% include header-jumbo.html %}
     <!-- Set the default image if none is provided in the YAML -->
     {% assign default-img-url = "https://github.com/edsandorf/pro-theme/blob/master/assets/img/default-img.jpg?raw=true" %}
     
-    <div class = "container mt-4 ">
+      <div class = "container container-extended">
       <div class = "row">
         <div class = "col-md-5">
           <div class = "polaroid-container">
@@ -30,13 +31,14 @@
           </div>
         </div>
       </div>
+      </div>
+    
+      {% if site.to_the_top %}
+        {% include to-the-top.html %}
+      {% endif %}
     </div>
-    
-    {% if site.to_the_top %}
-      {% include to-the-top.html %}
-    {% endif %}
-    
+      
     {% include footer.html %}
     
-  </body>
+  </body>  
 </html>
