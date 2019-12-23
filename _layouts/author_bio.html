@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang = "{{ site.lang | default: "en-US" }}">
+  {% include head.html %}
+  
+  <body>
+    {% include js.html %}
+    
+    {% include navigation.html %}
+    
+    {% include header.html %}
+    
+    <!-- Set the default image if none is provided in the YAML -->
+    {% assign default-img-url = "https://github.com/edsandorf/pro-theme/blob/master/assets/img/default-img.jpg?raw=true" %}
+    
+    <div class = "container mt-4 ">
+      <div class = "row">
+        <div class = "col-md-5">
+          <div class = "polaroid-container">
+            <img class = "polaroid-img" src = "{% if page.image %}{{ site.baseurl }}{{ page.image }}{% else %}{{default-img-url}}{% endif %}">
+           <div class = "polaroid-text">
+             <p>{{ page.author-name }}</p>
+            </div>
+          </div>
+        </div>
+        <div class = "col-md-7">
+          <div class = "container">
+            {{ page.content }}
+            <br>
+            {% if page.cv-address %}<a href = "{{ cv-address }}" class = "btn card-button mt-4"><i class = "fa fa-download"></i>Download CV</a>{% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    {% if site.to_the_top %}
+      {% include to-the-top.html %}
+    {% endif %}
+    
+    {% include footer.html %}
+    
+  </body>
+</html>

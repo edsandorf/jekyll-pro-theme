@@ -7,6 +7,7 @@
 @import "card-deck";
 @import "feed";
 @import "to-the-top";
+@import "polaroid-img";
 
 
 /* Body */
@@ -26,6 +27,8 @@ body {
 img {
   max-width: 100%;
 }
+
+
 
 .round-circle-extended {
   object-fit: cover;
