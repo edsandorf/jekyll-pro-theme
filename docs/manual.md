@@ -348,5 +348,35 @@ Your folder and file structure will look something like this:
 
 # Other layouts and extensions
 
+## Adding a carousel
+
+While opinions about the usefulness of carousels are [split](http://shouldiuseacarousel.com/), jekyll-pro-theme provides two ways of including carousels on your website. The first, and most common, is a simple picture carousel with a small title and caption at the bottom. This carousel is a direct implementation of the [Bootstrap 4 carousel](https://getbootstrap.com/docs/4.0/components/carousel/). To include a carousel, you need to define a JSON file with the content of the carousel and store it in your `_data` folder. For example, the following JSON file is used to create the carousel [here]({{ site.url }}/examples.html).
+
+```JSON
+[
+  {
+    "title": "First slide title",
+    "caption": "A drop falling into water.",
+    "source": "https://github.com/edsandorf/pro-theme/blob/master/assets/img/default-img.jpg?raw=true"
+  },
+  {
+    "source": "https://github.com/edsandorf/pro-theme/blob/master/assets/img/default-img-02.jpg?raw=true"
+  }
+]
+
+```
+
+In this example, the source is a hyperlink to the default pictures used by jekyll-pro-theme. In your use case, this is likely to be the relative path to where the pictures you wish to display are stored. Once we have defined our carousel, we need to include it somewhere on our site. We will do this using the now-familiar `include` tag. 
+
+{% raw %}
+```txt
+{% include carousel.html carousel_id = "carousel_example" carousel_data = site.data.carousel-example carousel_in_header = false layout_default = true %}
+```
+{% endraw %}
+
+Notice that we are passing several variables through the `include` tag. `carousel_id` must be a unique identifier, `carousel_data` tells jekyll-pro-theme where to get the data from, `carousel_in_header` is a boolean equal to true if the carousel is used in the header and `layout_default` is a boolean equal to true if the default Bootstrap layout is used. 
+
+It is possible to include the carousel in the header of your site. Currently, you can only include one carousel in the header, however, it can be included on all of your pages. To do so, we need to make three changes: 1) we need to add `carousel_in_header: true` to our page's YAML front matter, 2) set `carousel_in_header: true` in our `include` statement, and 3) save our JSON file in the `_data` folder and name it `carousel-header`. When including the carousel in the header it may also be desirable to use the alternative layout. This can be easily enabled setting `layout_default = false`. 
+
 
 # Previewing the website locally

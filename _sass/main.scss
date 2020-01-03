@@ -8,6 +8,7 @@
 @import "feed";
 @import "to-the-top";
 @import "polaroid-img";
+@import "carousel";
 
 
 /* Body */
@@ -31,7 +32,6 @@ body {
   padding-top: 15px;
   padding-bottom: 15px;
 }
-
 
 /* Images */
 img {
@@ -73,7 +73,7 @@ a {
   color: $text-color-secondary;
   background-color: $color-primary;
   background-image: linear-gradient(360deg, $color-primary, $color-secondary);
-  min-height: 400px;
+  height: 450px;
   margin-bottom: -50px;
   padding-bottom: 50px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -153,8 +153,6 @@ a {
     text-decoration: none;
   }
 }
-
-
 
 /* Blockquote */
 blockquote {

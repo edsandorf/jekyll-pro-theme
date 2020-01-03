@@ -2,6 +2,8 @@
 layout: default
 title: Page element examples
 subtitle: A page with examples of how various page elements look with Jekyll-Pro-Theme
+
+carousel_in_header: true
 ---
 
 ![Placeholder1080p](https://dummyimage.com/1920x1080/dcdcdc/fff.jpg)
@@ -70,6 +72,8 @@ We can also include smaller images throughout the text
 The theme is based on [Bootstrap 4](https://getbootstrap.com/) and makes use of the [Font Awesome](https://fontawesome.com/) icon set.
 
 
+# Including a carousel
 
+{% include carousel.html carousel_id = "carousel_example" carousel_data = site.data.carousel-example carousel_in_header = false layout_default = true %}
 
 

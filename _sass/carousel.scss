@@ -1,0 +1,17 @@
+.carousel-text {
+  color: $theme-white;
+}
+
+.carousel-item-header {
+  height: 450px;
+  margin-bottom: -50px;
+  padding-bottom: 50px;
+}
+
+.carousel-caption-extended {
+  bottom: 15% !important;
+}
+
+.carousel-header-image {
+  @extend .round-circle-extended;
+}

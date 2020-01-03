@@ -1,0 +1,111 @@
+<div id = "{{ include.carousel_id }}" class = "carousel slide" data-ride = "carousel">
+  <!-- Add the ordered list of indicators -->
+  <ol class = "carousel-indicators">
+    <!-- Declare a loop index -->
+    {% assign item_no = 0 %}
+    
+    <!-- Check if the carousel is used in the header -->
+    {% if include.carousel_in_header %}
+      <li data-target = "#{{ include.carousel_id }}" data-slide-to = "{{ item_no }}" class = "active"></li>
+      
+      <!-- Update the item numbering to correctly identify the hyperlinks when the carousel is used in the header -->
+      {% assign item_no = item_no | plus: 1 %}
+    {% endif %}
+    
+    <!-- Loop over the items in the data file -->
+    {% for item in include.carousel_data %}
+      {% if item_no == 0 %}
+        <li data-target = "#{{ include.carousel_id }}" data-slide-to = "{{ item_no }}" class = "active"></li>
+      {% else %}
+        <li data-target = "#{{ include.carousel_id }}" data-slide-to = "{{ item_no }}"></li>
+      {% endif %}
+      
+      <!-- Update the item numbering -->
+      {% assign item_no = item_no | plus: 1 %}
+    {% endfor %}
+  </ol>  
+  
+  <!-- Add the inner part of the carousel -->
+  <div class = "carousel-inner container px-0">
+    <!-- Declare a loop index -->
+    {% assign item_no = 0 %}
+    
+    <!-- Check if the carousel is used in the header -->
+    {% if include.carousel_in_header %}
+      <div class = "carousel-item carousel-item-header active">
+        <div class = "row">
+          <div class = "col-md-auto col-centered">
+            {% include header-content.html %}
+          </div>
+        </div>
+      </div>
+      <!-- Update the item numbering to correctly identify the hyperlinks when the carousel is used in the header -->
+      {% assign item_no = item_no | plus: 1 %}    
+    {% endif %}
+    
+    <!-- Loop over the items in the data file -->
+    {% for item in include.carousel_data %}
+      <!-- Different classes depending on whether it is the first -->
+      {% if item_no == 0 %}
+        <div class = "carousel-item active">
+      {% elsif include.carousel_in_header %}
+        <div class = "carousel-item carousel-item-header">
+      {% else %}
+        <div class = "carousel-item">
+      {% endif %}
+      
+      <!-- Check if we are using the default design for the carousel content -->
+        {% if include.layout_default %}
+          <img src = "{{ item.source }}">
+          <!-- If we have an image title or caption -->
+          {% if item.title or item.caption %}
+            <div class = "carousel-caption">
+              <h5 class = "carousel-text">{{ item.title }}</h5>
+              <p class = "carousel-text">{{ item.caption }}</p>
+            </div>
+          {% endif %}
+          
+        <!-- The alternative design for the carousel -->
+        {% else %}
+          <div class = "row">
+            <!-- Only include the image if present -->
+            {% if item.source %}
+              <div class = "col-md-3 col-md-offset-1 py-4">
+                <a href = "{{ item.url }}">
+                  <img class = "carousel-header-image" src = "{{ item.source }}">
+                </a>
+              </div>
+            {% endif %}
+            
+            <!-- Set content column to specific width if image is present -->
+            {% if item.source %}
+              <div class = "col-md-8 ml-auto">
+            {% else %}
+              <div class = "col-md-auto col-centered">
+            {% endif %}
+              <a href = "{{ item.url }}">
+                <h1 class = "display-4 d-inline-block page-header-text-color">{{ item.title }}</h1>
+              </a>
+              <hr class = "my-4 page-header-hr-color">
+              <p class = "lead d-inline-block page-header-text-color">{{ item.caption }}</p> 
+            </div>
+          </div>
+        {% endif %}
+      </div>
+      
+      <!-- Update the item numbering -->
+      {% assign item_no = item_no | plus: 1 %}      
+    {% endfor %}        
+  </div>
+  
+  <!-- Add the navigation arrows -->
+  <a class = "carousel-control-prev" href = "#{{ include.carousel_id }}" role = "button" data-slide = "prev">
+    <span class = "carousel-control-prev-icon" aria-hidden = "true"></span>
+    <span class = "sr-only">Previous</span>
+  </a>
+  <a class = "carousel-control-next" href = "#{{ include.carousel_id }}" role = "button" data-slide = "next">
+    <span class = "carousel-control-next-icon" aria-hidden = "true"></span>
+    <span class = "sr-only">Next</span>
+  </a>    
+
+</div>
