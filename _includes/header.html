@@ -1,5 +1,7 @@
-<div class = "container-fluid border-bottom py-4 mb-4 page-header page-header-normal">
-  <div class = "container text-center">
-    <h1 class = "display-4 d-inline-block page-header-text-color">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
-  </div>
+<div class = "jumbotron-fluid border-bottom page-header">
+  {% if page.carousel_in_header %}
+    {% include carousel.html carousel_id = "carousel_header" carousel_data = site.data.carousel-header carousel_in_header = true layout_default = false %}
+  {% else %}
+    {% include header-content.html %}
+  {% endif %}
 </div>
