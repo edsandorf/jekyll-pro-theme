@@ -3,6 +3,8 @@ layout: default-boxed
 landing-page: true
 title: Welcome to Jekyll-Pro-Theme!
 subtitle: Jekyll-Pro-Theme is a Github Pages theme for my professional and project websites
+
+header-image: "https://github.com/edsandorf/pro-theme/blob/master/assets/img/default-img.jpg?raw=true"
 ---
 
 Jekyll-Pro-Theme is a simple [Jekyll](https://jekyllrb.com/) theme to use with [GitHub Pages](https://pages.github.com). The theme is based on [Bootstrap 4](https://getbootstrap.com/), makes use of the [Font Awesome](https://fontawesome.com/) icon set and [Prism](https://prismjs.com/) for code syntax highlighting. Bootstrap's responsive CSS classes ensures that the theme also works on mobile devices.

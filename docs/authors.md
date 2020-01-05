@@ -1,7 +1,9 @@
 ---
 layout: default-boxed
+header-image: "https://github.com/edsandorf/pro-theme/blob/master/assets/img/default-img.jpg?raw=true"
 title: Author page example
 cv-address: "#"
+
 ---
 
 {% include polaroid.html image = "https://github.com/edsandorf/pro-theme/blob/master/assets/img/default-img.jpg?raw=true" caption = "Erlend" %}

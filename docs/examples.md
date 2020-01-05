@@ -1,5 +1,6 @@
 ---
 layout: default-boxed
+header-image: "https://github.com/edsandorf/pro-theme/blob/master/assets/img/default-img.jpg?raw=true"
 title: Page element examples
 subtitle: A page with examples of how various page elements look with Jekyll-Pro-Theme
 
