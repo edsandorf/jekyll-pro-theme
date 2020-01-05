@@ -2,19 +2,19 @@
 
 <div class = "container">
   <ul class = "feed-list">
-    <!-- Test if page.category is specified and filter list to be output -->
-    {% if page.category And page.category != empty And page.category != nil %}
-      {% assign list_of_posts = site.categories[page.category] %}
+    <!-- Test if include.category_to_display is specified and filter list to be output -->
+    {% if include.category_to_display And include.category_to_display != empty And include.category_to_display != nil %}
+      {% assign list_of_posts = site.categories[include.category_to_display] %}
     {% else %}
       {% assign list_of_posts = site.posts %}
     {% endif %}
-    {% for post in list_of_posts limit: page.display %}
+    {% for post in list_of_posts limit: include.posts_to_display %}
       <li class = "feed-list-element">
         <div class = "row">
           <!-- Image column -->
           <div class = "col-md-4 col-md-offset-2">
             <a href = "{{ post.url }}">
-              <img class = "feed-img" src = "{% if post.image %}{{ site.baseurl }}{{ post.image }}{% else %}{{default-img-url}}{% endif %}">
+              <img class = "feed-img" src = "{% if post.image %}{{ site.baseurl }}{{ post.image }}{% else %}{{ include.image }}{% endif %}">
             </a>
           </div>
           <!-- Title, date and excerpt column -->
