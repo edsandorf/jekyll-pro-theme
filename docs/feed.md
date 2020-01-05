@@ -12,3 +12,6 @@ subtitle: Example of different post feeds to use with Jekyll-Pro-Theme
 
 # Card deck
 {% include carddeck.html %}
+
+# Postcard
+{% include postcard.html %}

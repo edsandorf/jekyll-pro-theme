@@ -1,0 +1,25 @@
+{% assign default-img-url = "https://github.com/edsandorf/pro-theme/blob/master/assets/img/default-img.jpg?raw=true" %}
+
+<div class = "container">
+  <!-- Test if page.category is specified and filter list to be output -->
+  {% if page.category And page.category != empty And page.category != nil %}
+    {% assign list_of_posts = site.categories[page.category] %}
+  {% else %}
+    {% assign list_of_posts = site.posts %}
+  {% endif %}
+  {% for post in list_of_posts limit: page.display %}
+    <div class = "post-container">
+      <div class = "post-image-wrap">
+        <div class = "post-image" style = "background-image: url({% if post.image %}{{ site.baseurl }}{{ post.image }}{% else %}{{default-img-url}}{% endif %})"></div>
+      </div>
+    
+      <div class = "post-content-wrap">
+        <div class = "post-content">
+          <h4 class = "feed-title"><a href="{{ post.url }}">{{ post.title }}</a></h4>
+          <span>Published: {{ post.date | date_to_long_string }} </span>
+          <p class = "text-muted">{{ post.excerpt }}</p>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
