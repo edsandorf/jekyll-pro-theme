@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: default-boxed
 landing-page: true
 title: Welcome to Jekyll-Pro-Theme!
 subtitle: Jekyll-Pro-Theme is a Github Pages theme for my professional and project websites
