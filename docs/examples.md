@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: default-boxed
 title: Page element examples
 subtitle: A page with examples of how various page elements look with Jekyll-Pro-Theme
 

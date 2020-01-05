@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: default-boxed
 title: Author page example
 cv-address: "#"
 ---

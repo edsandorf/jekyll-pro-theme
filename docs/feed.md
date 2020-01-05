@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: default-boxed
 title: Post feeds
 subtitle: Example of different post feeds to use with Jekyll-Pro-Theme
 ---

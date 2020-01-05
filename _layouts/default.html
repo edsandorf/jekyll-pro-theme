@@ -2,16 +2,18 @@
 <html lang = "{{ site.lang | default: "en-US" }}">
   {% include head.html %}
   
-  <body style = "background-color: #f4f5f6">
+  <body>
     {% include js.html %}
     
     <div class = "body-push">
       {% include navigation.html %}
     
       <!-- Check if the page is a landing page -->
-      {% include header.html %}
+      <div class = "page-header">
+        {% include header.html %}
+      </div>
     
-      <div class = "container container-extended clearfix">
+      <div class = "container clearfix">
         {{ content }}
       </div>
     
@@ -19,7 +21,7 @@
         {% include to-the-top.html %}
       {% endif %}
     </div>
-      
+
     {% include footer.html %}
     
   </body>
