@@ -10,7 +10,8 @@
 @import "polaroid-img";
 @import "carousel";
 @import "postcard";
-
+@import "header";
+@import "footer";
 
 /* Body */
 body {
@@ -25,12 +26,27 @@ body {
   display: none;
 }
 
+.body-push {
+  min-height: calc(100vh - 250px); // subtract the height + margin of footer
+}
+
 .container-extended {
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-bottom: auto;
   padding-top: 15px;
   padding-bottom: 15px;
+  position: relative;
+}
+
+.container-offset {
+  margin-top: 0px;
+}
+
+@media only screen and (min-width: 768px) {
+  .container-offset {
+    margin-top: -60px;
+  }
 }
 
 /* Images */
@@ -61,96 +77,6 @@ h6 {
 a {
   color: $color-secondary;
   text-decoration: none;
-  
-  &:hover {
-    color: $color-primary;
-    text-decoration: none;
-  }
-}
-
-/* Header */
-.page-header {
-  color: $text-color-secondary;
-  background-color: $color-primary;
-  background-image: linear-gradient(360deg, $color-primary, $color-secondary);
-  min-height: 450px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-bottom: 15px;
-}
-
-.page-header-offset {
-  margin-bottom: -65px;
-  padding-bottom: 50px;
-}
-
-.page-header-normal {
-  min-height: 150px !important;
-}
-
-.page-header-text-color {
-  color: $text-color-secondary;
-}
-
-.page-header-hr-color {
-  background-color: transparent;
-  border-top: 1px solid $text-color-secondary;
-}
-
-.page-header a {
-  color: $text-color-secondary;
-  text-decoration: none;
-  
-  &:hover {
-    color: $text-color-primary;
-    text-decoration: none;
-  }
-}
-
-.page-header.fab {
-  color: $text-color-secondary;
-  
-  &:hover {
-    color: $text-color-primary;
-    text-decoration: none;
-  }  
-}
-
-.page-header.fas {
-  color: $text-color-secondary;
-  
-  &:hover {
-    color: $text-color-primary;
-    text-decoration: none;
-  }
-}
-
-/* Footer */
-.body-push {
-  min-height: calc(100vh - 250px); // subtract the height + margin of footer
-}
-
-.page-footer {
-  margin-top: 50px;
-  padding-top: 50px;
-  padding-bottom: 100px;
-  padding-right: 0px;
-  padding-left: 0px;
-  background-color: white;
-  height: calc(100px + 100px);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.fab {
-  color: $color-secondary;
-  
-  &:hover {
-    color: $color-primary;
-    text-decoration: none;
-  }  
-}
-
-.fas {
-  color: $color-secondary;
   
   &:hover {
     color: $color-primary;
