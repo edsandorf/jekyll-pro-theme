@@ -4,17 +4,22 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin: 0 auto;
   padding: 60px 0 100px;
+  min-height: 500px;
 }
 
-@media only screen and (min-width: 1220px) {
+
+
+@media only screen and (min-width: 1024px) {
   .page-header {
     padding: 160px 0 220px;
+    min-height: 700px;
   }
 }
 
 @media only screen and (min-width: 768px) {
   .page-header {
     padding: 120px 0 180px;
+    min-height: 650px;
   }
 }
 
@@ -57,8 +62,22 @@
   position: relative;
   margin: auto;
   padding: 0 20px;
+  padding-top: 0;
   color: $text-color-secondary;
 }
+
+@media only screen and (min-width: 1220px) {
+  .page-header-content {
+    padding-top: 100px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .page-header-content {
+    padding-top: 50px;
+  }
+}
+
 
 .page-header-text-color {
   color: $text-color-secondary;
