@@ -37,18 +37,18 @@
     left: auto;
     right: 0;
   }
-  
+
   .post-container:nth-child(2n) .post-content-wrap {
     float: left;
     padding: 30px 0 30px 30px;
   }
-  
+
   .post-container:nth-child(2n) .post-content {
     margin: 0 -30px 0 0;
-  }  
+  }
 }
 
-.post-image-wrap { 
+.post-image-wrap {
   position: relative;
   height: 0;
   margin: 0;
@@ -103,7 +103,7 @@
     float: right;
     padding: 30px 30px 30px 0;
     width: 50%;
-  } 
+  }
 }
 
 .post-content {

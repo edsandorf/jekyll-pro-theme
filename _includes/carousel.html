@@ -3,15 +3,15 @@
   <ol class = "carousel-indicators">
     <!-- Declare a loop index -->
     {% assign item_no = 0 %}
-    
+
     <!-- Check if the carousel is used in the header -->
     {% if include.carousel_in_header %}
       <li data-target = "#{{ include.carousel_id }}" data-slide-to = "{{ item_no }}" class = "active"></li>
-      
+
       <!-- Update the item numbering to correctly identify the hyperlinks when the carousel is used in the header -->
       {% assign item_no = item_no | plus: 1 %}
     {% endif %}
-    
+
     <!-- Loop over the items in the data file -->
     {% for item in include.carousel_data %}
       {% if item_no == 0 %}
@@ -19,17 +19,17 @@
       {% else %}
         <li data-target = "#{{ include.carousel_id }}" data-slide-to = "{{ item_no }}"></li>
       {% endif %}
-      
+
       <!-- Update the item numbering -->
       {% assign item_no = item_no | plus: 1 %}
     {% endfor %}
-  </ol>  
-  
+  </ol>
+
   <!-- Add the inner part of the carousel -->
   <div class = "carousel-inner container px-0">
     <!-- Declare a loop index -->
     {% assign item_no = 0 %}
-    
+
     <!-- Check if the carousel is used in the header -->
     {% if include.carousel_in_header %}
       <div class = "carousel-item carousel-item-header active">
@@ -40,9 +40,9 @@
         </div>
       </div>
       <!-- Update the item numbering to correctly identify the hyperlinks when the carousel is used in the header -->
-      {% assign item_no = item_no | plus: 1 %}    
+      {% assign item_no = item_no | plus: 1 %}
     {% endif %}
-    
+
     <!-- Loop over the items in the data file -->
     {% for item in include.carousel_data %}
       <!-- Different classes depending on whether it is the first -->
@@ -53,7 +53,7 @@
       {% else %}
         <div class = "carousel-item">
       {% endif %}
-      
+
       <!-- Check if we are using the default design for the carousel content -->
         {% if include.layout_default %}
           <img src = "{{ item.source }}">
@@ -64,7 +64,7 @@
               <p class = "carousel-text">{{ item.caption }}</p>
             </div>
           {% endif %}
-          
+
         <!-- The alternative design for the carousel -->
         {% else %}
           <div class = "row">
@@ -76,7 +76,7 @@
                 </a>
               </div>
             {% endif %}
-            
+
             <!-- Set content column to specific width if image is present -->
             {% if item.source %}
               <div class = "col-md-8 ml-auto">
@@ -87,17 +87,17 @@
                 <h1 class = "display-4 d-inline-block page-header-text-color">{{ item.title }}</h1>
               </a>
               <hr class = "my-4 page-header-hr-color">
-              <p class = "lead d-inline-block page-header-text-color">{{ item.caption }}</p> 
+              <p class = "lead d-inline-block page-header-text-color">{{ item.caption }}</p>
             </div>
           </div>
         {% endif %}
       </div>
-      
+
       <!-- Update the item numbering -->
-      {% assign item_no = item_no | plus: 1 %}      
-    {% endfor %}        
+      {% assign item_no = item_no | plus: 1 %}
+    {% endfor %}
   </div>
-  
+
   <!-- Add the navigation arrows -->
   <a class = "carousel-control-prev" href = "#{{ include.carousel_id }}" role = "button" data-slide = "prev">
     <span class = "carousel-control-prev-icon" aria-hidden = "true"></span>
@@ -106,6 +106,6 @@
   <a class = "carousel-control-next" href = "#{{ include.carousel_id }}" role = "button" data-slide = "next">
     <span class = "carousel-control-next-icon" aria-hidden = "true"></span>
     <span class = "sr-only">Next</span>
-  </a>    
+  </a>
 
 </div>

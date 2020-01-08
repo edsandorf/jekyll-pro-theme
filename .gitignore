@@ -12,6 +12,6 @@ Gemfile.lock
 
 .vs/
 
-_data/
-search.json
-_config.yml
+/_data/
+/_config.yml
+/search.json

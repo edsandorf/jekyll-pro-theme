@@ -6,10 +6,10 @@
         <!-- Add button for collapsing the navigation bar -->
         <button class = "navbar-toggler" id = "toggleButton" type = "button" data-toggle = "collapse" data-target = "#navbarSupportedContent" aria-controls = "navbarSupportedContent" aria-expanded = "false" aria-label = "Toggle navigation">
           <span>
-            <i class="fas fa-bars text-white"></i>
+            <i class = "fas fa-bars text-white"></i>
           </span>
         </button>
-  
+
         <!-- Start the collapsable div -->
         <div class = "collapse navbar-collapse" id = "navbarSupportedContent">
           <!-- Start the navigation tabs -->
@@ -19,15 +19,15 @@
                 <li class = "nav-item  nav-item-customizer-underline">
                   <a class = "nav-link" href = "{{ node.link }}">
                     {{ node.name }}
-                  </a> 
+                  </a>
                 </li>
               <!-- The non-active class -->
               {% else %}
                 <li class = "nav-item">
                   <a class = "nav-link" href = "{{ node.link }}">
                     {{ node.name }}
-                  </a> 
-                </li>      
+                  </a>
+                </li>
               {% endif %}
             {% endfor %}
           </ul>
@@ -45,31 +45,31 @@
                 </span>
               </button>
             </div>
-          </div>    
-        </div>      
-      {% endif %}     
+          </div>
+        </div>
+      {% endif %}
     {% endif %}
   </div>
 </div>
 
 <!-- Modal - Needs to be outside to avoid problems when nested inside a relatively positioned element -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Search results</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
+<div class = "modal fade" id = "exampleModal" tabindex = "-1" role = "dialog" aria-labelledby = "exampleModalLabel" aria-hidden = "true">
+  <div class = "modal-dialog modal-lg" role="document">
+    <div class = "modal-content">
+      <div class = "modal-header">
+        <h5 class = "modal-title" id = "exampleModalLabel">Search results</h5>
+        <button type = "button" class = "close" data-dismiss = "modal" aria-label = "Close">
+          <span aria-hidden = "true">&times;</span>
         </button>
       </div>
-      <div class="modal-body">
+      <div class = "modal-body">
         <ul id = "results-container"></ul>
       </div>
     </div>
   </div>
-</div>  
+</div>
 
-<!-- Script to toggle class when the navbar collapses 
+<!-- Script to toggle class when the navbar collapses
 <script>
   $(".navbar-toggler").click(function () {
     $("li").toggleClass("nav-item-customizer-collapsed");

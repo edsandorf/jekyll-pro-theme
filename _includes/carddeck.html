@@ -8,7 +8,7 @@
     {% else %}
       {% assign list_of_posts = site.posts %}
     {% endif %}
-      
+
     {% for post in list_of_posts limit: include.posts_to_display %}
       <div class = "card border-0 mt-2 card-width">
         <a href = "{{ post.url }}"><img src = "{% if post.image %}{{ site.baseurl }}{{ post.image }}{% else %}{{ include.image }}{% endif %}" class = "card-img-extended mx-auto" alt = "..."></a>
@@ -19,29 +19,29 @@
         </div>
         <div class = "card-footer bg-white border-0"><a href = "{{ post.url }}" class = "btn card-button">Read more</a></div>
       </div>
-      
+
       <!-- Use modulo to add divs to handle break points -->
       {% assign sm = forloop.index | modulo: 2 %}
       {% assign md = forloop.index | modulo: 3 %}
       {% assign lg = forloop.index | modulo: 4 %}
       {% assign xl = forloop.index | modulo: 5 %}
-      
+
       {% if sm == 0 %}
         <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
       {% endif %}
-      
+
       {% if md == 0 %}
         <div class="w-100 d-none d-md-block d-lg-none"><!-- wrap every 3 on md--></div>
       {% endif %}
-      
+
       {% if lg == 0 %}
         <div class="w-100 d-none d-lg-block d-xl-none"><!-- wrap every 4 on lg--></div>
       {% endif %}
-      
+
       {% if xl == 0 %}
         <div class="w-100 d-none d-xl-block"><!-- wrap every 5 on xl--></div>
       {% endif %}
-      
+
     {% endfor %}
   </div>
 </div>

@@ -48,7 +48,7 @@ It is easy to create good looking lists when writing your website using Markdown
 
 ### Header 3
 
-Writing documents in markdown allows the author to include blocks of code with syntax highlighting. 
+Writing documents in markdown allows the author to include blocks of code with syntax highlighting.
 
 ```r
 # This is some R code
@@ -76,5 +76,3 @@ The theme is based on [Bootstrap 4](https://getbootstrap.com/) and makes use of 
 # Including a carousel
 
 {% include carousel.html carousel_id = "carousel_example" carousel_data = site.data.carousel-example carousel_in_header = false layout_default = true %}
-
-

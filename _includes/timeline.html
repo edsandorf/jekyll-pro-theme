@@ -17,11 +17,11 @@
               timeline-inverted
             {% endif %}
           {% endcapture %}
-        
+
           <li class = "{{ class }}">
             <div class = "timeline-image">
               <a href = "{{ post.url }}">
-                <img class = "rounded-circle round-circle-extended img-responsive" src = "{% if post.image %}{{ site.baseurl }}{{ post.image }}{% else %}{{ include.image }}{% endif %}"> 
+                <img class = "rounded-circle round-circle-extended img-responsive" src = "{% if post.image %}{{ site.baseurl }}{{ post.image }}{% else %}{{ include.image }}{% endif %}">
               </a>
             </div>
             <div class = "timeline-panel">

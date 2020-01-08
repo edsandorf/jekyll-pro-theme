@@ -1,38 +1,38 @@
 <!DOCTYPE html>
 <html lang = "{{ site.lang | default: "en-US" }}">
   {% include head.html %}
-  
+
   <body style = "background-color: #f4f5f6">
     {% include js.html %}
-    
+
     <div class = "body-push">
       {% include navigation.html %}
-    
+
       <!-- Check if the page is a landing page -->
       <div class = "page-header page-header-offset page-header-background">
         {% include header.html %}
       </div>
-    
+
       <div class = "container container-extended clearfix container-offset">
       <div class = "row">
         <div class = "col-md-8">
-          {{ content }}    
+          {{ content }}
         </div>
         <div class = "col-md-4">
           <div>
-            <a class="twitter-timeline noscrollbar" data-tweet-limit = "{{ page.tweet-display }}" href="https://twitter.com/{{ site.twitter_handle }}?ref_src=twsrc%5Etfw">Tweets by site.twitter_handle</a>
-            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <a class = "twitter-timeline noscrollbar" data-tweet-limit = "{{ page.tweet-display }}" href="https://twitter.com/{{ site.twitter_handle }}?ref_src=twsrc%5Etfw">Tweets by site.twitter_handle</a>
+            <script async src = "https://platform.twitter.com/widgets.js" charset = "utf-8"></script>
           </div>
         </div>
       </div>
       </div>
-    
+
       {% if site.to_the_top %}
         {% include to-the-top.html %}
       {% endif %}
     </div>
-      
+
     {% include footer.html %}
-    
-  </body>  
+
+  </body>
 </html>

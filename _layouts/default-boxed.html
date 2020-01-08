@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html lang = "{{ site.lang | default: "en-US" }}">
   {% include head.html %}
-  
+
   <body style = "background-color: #f4f5f6">
     {% include js.html %}
-    
+
     <div class = "body-push">
       {% include navigation.html %}
-    
+
       <!-- Check if the page is a landing page -->
       <div class = "page-header page-header-offset page-header-background">
         {% include header.html %}
       </div>
-    
+
       <div class = "container container-extended clearfix container-offset">
         {{ content }}
       </div>
-    
+
       {% if site.to_the_top %}
         {% include to-the-top.html %}
       {% endif %}
     </div>
-      
+
     {% include footer.html %}
-    
+
   </body>
 </html>

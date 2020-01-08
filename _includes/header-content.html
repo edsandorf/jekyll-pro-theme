@@ -1,13 +1,13 @@
 <div class = "container page-header-content text-center">
   <h1 class = "display-4 d-inline-block page-header-text-color">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
   <hr class = "my-4 page-header-hr-color">
-  
+
   {% if page.landing-page %}
     <p class = "lead d-inline-block page-header-text-color">{{ page.description | default: page.subtitle | default: site.description | default: site.github.project_tagline }}</p><br>
   {% else %}
     <p class = "lead d-inline-block page-header-text-color">{{ page.subtitle }}</p><br>
   {% endif %}
-  
+
   {% if site.github.is_project_page and page.landing-page%}
     <a href = "{{ site.github.repository_url }}" class = "btn btn-link btn-lg d-inline-block border-white mt-4">View on Github</a>
   {% endif %}
