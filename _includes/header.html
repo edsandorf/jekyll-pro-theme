@@ -1,10 +1,10 @@
-<div class = "jumbotron-fluid">
-  <div class = "page-header-image" style = "background-image: url({{ page.header-image }})">
-    <div class = "page-header-image-overlay"></div>
-    {% if page.carousel_in_header %}
-      {% include carousel.html carousel_id = "carousel_header" carousel_data = site.data.carousel-header carousel_in_header = true layout_default = false %}
-    {% else %}
-      {% include header-content.html %}
-    {% endif %}
-  </div>
+<div class = "{% if page.landing-page %} page-header-landing {% else %} page-header {% endif %} page-header-background">
+    <div class = "page-header-image" style = "background-image: url({{ page.header-image }})">
+      <div class = "page-header-image-overlay"></div>
+      {% if page.carousel_in_header %}
+        {% include carousel.html carousel_id = "carousel_header" carousel_data = site.data.carousel-header carousel_in_header = true layout_default = false %}
+      {% else %}
+        {% include header-content.html %}
+      {% endif %}
+    </div>
 </div>

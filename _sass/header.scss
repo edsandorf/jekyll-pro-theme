@@ -3,33 +3,46 @@
   min-height: 450px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin: 0 auto;
-  padding: 60px 0 100px;
-  min-height: 500px;
-}
-
-@media only screen and (min-width: 992px) {
-  .page-header {
-    padding: 160px 0 220px;
-    min-height: 700px;
-  }
+  padding-right: 0;
+  padding-left: 0;
+  min-height: 400px;
 }
 
 @media only screen and (min-width: 768px) {
   .page-header {
     padding: 120px 0 180px;
+    min-height: 475px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .page-header {
+    padding: 160px 0 220px;
+    min-height: 550px;
+  }
+}
+
+.page-header-landing {
+  @extend .page-header;
+  min-height: 500px;
+}
+
+@media only screen and (min-width: 768px) {
+  .page-header-landing {
+    padding: 120px 0 180px;
+    min-height: 575px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .page-header-landing {
+    padding: 160px 0 220px;
     min-height: 650px;
   }
 }
 
-/*
-.page-header-offset {
-  margin-bottom: -65px;
-  padding-bottom: 50px;
-}
-*/
-
-.page-header-normal {
-  min-height: 150px !important;
+.page-header-background {
+  background-image: linear-gradient(360deg, $color-primary, $color-secondary);
 }
 
 .page-header-image {
@@ -43,10 +56,6 @@
   background-size: cover;
 }
 
-.page-header-background {
-  background-image: linear-gradient(360deg, $color-primary, $color-secondary);
-}
-
 .page-header-image-overlay {
   position: absolute;
   top: 0;
@@ -58,24 +67,12 @@
 
 .page-header-content {
   position: relative;
-  margin: auto;
-  padding: 0 20px;
-  padding-top: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  padding-top: 7.5%;
   color: $text-color-secondary;
 }
-
-@media only screen and (min-width: 1200px) {
-  .page-header-content {
-    padding-top: 100px;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .page-header-content {
-    padding-top: 50px;
-  }
-}
-
 
 .page-header-text-color {
   color: $text-color-secondary;
@@ -83,7 +80,7 @@
 
 .page-header-hr-color {
   background-color: transparent;
-  border-top: 1px solid $text-color-secondary;
+  border-top: 2px solid $text-color-secondary;
 }
 
 .page-header a {
