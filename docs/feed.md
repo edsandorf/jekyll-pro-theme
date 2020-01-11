@@ -1,5 +1,5 @@
 ---
-layout: default-boxed
+layout: boxed
 header-image: "https://github.com/edsandorf/pro-theme/blob/master/assets/img/default-img.jpg?raw=true"
 title: Post feeds
 subtitle: Example of different post feeds to use with Jekyll-Pro-Theme

@@ -1,5 +1,5 @@
 ---
-layout: default-boxed
+layout: boxed
 header-image: "https://github.com/edsandorf/pro-theme/blob/master/assets/img/default-img.jpg?raw=true"
 title: Getting started with Jekyll-Pro-Theme
 subtitle: A short user manual outlining the main features of Jekyll-Pro-Theme
