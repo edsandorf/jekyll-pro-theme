@@ -11,7 +11,7 @@
   margin-top: 0;
 }
 
-@media only screen and (min-width: 1024px) {
+@media (min-width: 992px) {
   .post-container {
     margin-top: 60px;
     background: $theme-gray;
@@ -32,7 +32,7 @@
   box-shadow: 0 6px 16px rgba(0, 0, 0, .1);
 }
 
-@media only screen and (min-width: 1024px) {
+@media (min-width: 992px) {
   .post-container:nth-child(2n) .post-image-wrap {
     left: auto;
     right: 0;
@@ -56,7 +56,7 @@
   overflow: hidden;
 }
 
-@media only screen and (min-width: 1024px) {
+@media (min-width: 992px) {
   .post-image-wrap {
     position: absolute;
     top: 0;
@@ -92,13 +92,13 @@
   background: $theme-gray;
 }
 
-@media only screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .post-content-wrap {
     padding: 0 30px 30px;
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media (min-width: 992px) {
   .post-content-wrap {
     float: right;
     padding: 30px 30px 30px 0;
@@ -121,14 +121,14 @@
   transition: all .4s cubic-bezier(.2,.3,0,1);
 }
 
-@media only screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .post-content {
     margin-top: -30px;
     padding: 30px;
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media (min-width: 992px) {
   .post-content {
     margin: 0 0 0 -30px;
     min-height: 400px;

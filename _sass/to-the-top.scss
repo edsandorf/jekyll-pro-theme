@@ -1,5 +1,5 @@
 #myBtn .fas {
-  color: white;
+  color: $theme-white;
 }
 
 #myBtn {
@@ -15,11 +15,11 @@
   padding: 0 5px;
   border-radius: 5px; /* Rounded corners */
   background-color: $color-secondary;
-  color: white;
+  color: $theme-white;
 
   &:hover {
     background-color: $color-primary;
     text-decoration: none;
-    color: white;
+    color: $theme-white;
   }
 }

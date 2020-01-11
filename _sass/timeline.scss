@@ -122,7 +122,8 @@ Some modifications to fit the current theme.
     margin-bottom: 0;
 }
 
-@media(min-width:768px) {
+/* Changed from original to bootstrap media queries */
+@media (min-width: 768px) {
     .timeline:before {
         left: 50%;
     }
@@ -159,7 +160,7 @@ Some modifications to fit the current theme.
     }
 }
 
-@media(min-width:992px) {
+@media (min-width: 992px) {
     .timeline>li {
         min-height: 150px;
     }
@@ -185,7 +186,7 @@ Some modifications to fit the current theme.
     }
 }
 
-@media(min-width:1200px) {
+@media (min-width: 1200px) {
     .timeline>li {
         min-height: 170px;
     }
