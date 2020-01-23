@@ -5,6 +5,8 @@ show_search_bar: true
 show_downloads: true
 to_the_top: true
 
+google_analytics: UA-154953740-3
+
 creator: Erlend Dancke Sandorf
 
 e_mail: e.d.sandorf@stir.ac.uk
