@@ -12,9 +12,13 @@
   width: 100%;
 }
 
-.polaroid-text {
+.polaroid-caption {
   text-align: center;
   padding: 10px 20px;
+}
+
+.polaroid-text {
+  margin-top: 5px;
 }
 
 @media only screen and (max-width: 768px) {
